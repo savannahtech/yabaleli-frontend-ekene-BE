@@ -1,0 +1,12 @@
+node_modules
+.env.development
+.env.test
+build
+coverage
+react-email-starter
+.babelrc
+events/
+
+.dbdata
+.redisdata
+.env

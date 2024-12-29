@@ -1,0 +1,13 @@
+const path = require('node:path');
+
+// Helper function to get path in build directory
+const getBuildPath = (basePath) => {
+  return path.resolve(process.cwd(), 'build/db', basePath);
+};
+
+module.exports = {
+  config: getBuildPath('config.js'),
+  'models-path': getBuildPath('models'),
+  'seeders-path': getBuildPath('seeders'),
+  'migrations-path': getBuildPath('migrations'),
+};
